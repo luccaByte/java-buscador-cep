@@ -15,6 +15,8 @@ public class Cep {
     private int ddd;
     private String siafi;
 
+    public Cep() {}
+
     public String getCep() {
         return cep;
     }
