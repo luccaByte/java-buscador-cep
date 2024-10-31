@@ -9,7 +9,7 @@ import java.net.http.HttpResponse;
 public class ViaCepClient {
     private static final String url = "https://viacep.com.br/ws/";
 
-    public String buscaCep (String cep) {
+    public String buscaCep (String cep) throws IOException, InterruptedException {
         String endereco = url + cep + "/json/";
 
         HttpClient client = HttpClient.newHttpClient();
